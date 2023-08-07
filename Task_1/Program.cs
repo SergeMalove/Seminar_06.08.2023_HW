@@ -3,7 +3,12 @@
 // 782 -> 8
 // 918 -> 1
 
+int SecondDigit(int number)
+{
+    return number % 100 / 10;
+}
+
 System.Console.Write("Введите трехзначное число: ");
 int num = int.Parse(Console.ReadLine());
 
-System.Console.WriteLine($"Вторая цифра числа {num}: {num % 100 / 10}");
+System.Console.WriteLine($"Вторая цифра числа {num}: {SecondDigit(num)}");
